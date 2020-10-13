@@ -19,8 +19,7 @@ try:
     input = browser.find_element_by_xpath("//input[@id='answer']")
     input.send_keys(value_x_attrubute)
 
-    checkbox = browser.find_element_by_xpath("//input[@type='checkbox']")
-    checkbox.click()
+    checkbox = browser.find_element_by_xpath("//input[@type='checkbox']").click()
 
     robots = browser.find_element_by_css_selector("[id='robotsRule'")
     robots.click()
